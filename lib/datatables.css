@@ -11,3 +11,23 @@
 .table__cell--heading {
     font-weight: 500;
 }
+.table__button {
+    outline: none;
+    border: 1px solid #555;
+    border-radius: 2px;
+    background: #ccc;
+    padding: 3px 7px;
+    cursor: pointer;
+    margin: 4px 10px;
+}
+.table__button:not(:disabled):hover {
+    filter: brightness(0.9);
+}
+.table__button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.table__button--danger {
+    border-color: #f55;
+    background: #fcc;
+}
